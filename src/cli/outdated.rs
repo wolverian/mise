@@ -21,7 +21,7 @@ pub struct Outdated {
     /// If not specified, all tools in global and local configs will be shown
     #[clap(value_name = "TOOL@VERSION", verbatim_doc_comment)]
     pub tool: Vec<ToolArg>,
-    
+
     /// Show outdated tools from all tracked config files
     #[clap(long, short, verbatim_doc_comment)]
     pub all: bool,
