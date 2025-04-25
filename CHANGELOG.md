@@ -1,5 +1,12 @@
 # Changelog
 
+## [2025.4.10](https://github.com/jdx/mise/compare/v2025.4.9..v2025.4.10) - 2025-04-25
+
+### Chore
+
+- checkout for homebrew bump by [@jdx](https://github.com/jdx) in [6d7b0f6](https://github.com/jdx/mise/commit/6d7b0f6fdf83ee9d7be29a61b5b5be202ac0526a)
+- mise.lock by [@jdx](https://github.com/jdx) in [05c9a24](https://github.com/jdx/mise/commit/05c9a241744fa330677402a365344b8430a4984c)
+
 ## [2025.4.9](https://github.com/jdx/mise/compare/v2025.4.8..v2025.4.9) - 2025-04-25
 
 ### 🚀 Features
