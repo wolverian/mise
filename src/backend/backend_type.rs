@@ -17,6 +17,7 @@ use std::fmt::{Display, Formatter};
 pub enum BackendType {
     Aqua,
     Asdf,
+    Cabal,
     Cargo,
     Core,
     Dotnet,
@@ -43,6 +44,7 @@ impl BackendType {
         match s {
             "aqua" => BackendType::Aqua,
             "asdf" => BackendType::Asdf,
+            "cabal" => BackendType::Cabal,
             "cargo" => BackendType::Cargo,
             "core" => BackendType::Core,
             "dotnet" => BackendType::Dotnet,

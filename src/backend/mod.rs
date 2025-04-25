@@ -32,6 +32,7 @@ use std::sync::LazyLock as Lazy;
 pub mod aqua;
 pub mod asdf;
 pub mod backend_type;
+pub mod cabal;
 pub mod cargo;
 pub mod dotnet;
 mod external_plugin_cache;
@@ -132,6 +133,7 @@ pub fn arg_to_backend(ba: BackendArg) -> Option<ABackend> {
         }
         BackendType::Aqua => Some(Arc::new(aqua::AquaBackend::from_arg(ba))),
         BackendType::Asdf => Some(Arc::new(asdf::AsdfBackend::from_arg(ba))),
+        BackendType::Cabal => Some(Arc::new(cabal::CabalBackend::from_arg(ba))),
         BackendType::Cargo => Some(Arc::new(cargo::CargoBackend::from_arg(ba))),
         BackendType::Dotnet => Some(Arc::new(dotnet::DotnetBackend::from_arg(ba))),
         BackendType::Npm => Some(Arc::new(npm::NPMBackend::from_arg(ba))),
