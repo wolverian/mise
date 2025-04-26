@@ -55,7 +55,7 @@ impl Backend for CabalBackend {
             .arg("install")
             .arg(format!("{}-{}", self.tool_name(), tv.version))
             .arg("--installdir")
-            .arg(tv.install_path())
+            .arg(tv.install_path().join("bin"))
             .with_pr(&ctx.pr)
             .envs(ctx.ts.env_with_path(&config)?)
             .prepend_path(ctx.ts.list_paths())?
